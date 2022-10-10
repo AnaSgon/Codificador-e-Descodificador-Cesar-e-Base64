@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+
+    <header id="area-cabecalho">
+        <section id="area-logo">
+            <h1>JavaS<span class="cor">.cod</span></h1>
+        </section>
+
+        <nav id="area-menu">
+            <a href="#">Conteúdos</a>
+            <a href="#">Portifolio</a>
+            <a href="#">Contato</a>
+            
+        </nav>
+    </header>
+
+    <main id="area-principal">
+        <article id="area-postagem">
+            
+            <section class="postagem">
+                <h2>Codificador: Cifra de Cesar</h2>
+                <span class="data-postagem">Postado em 03/10/2022</span>
+                <fieldset class="cifra">
+                <label for="">1.Coloque abaixo um número sendo a chave de Cesar</label>
+                <br><br>
+                <label for="">2.Para criptografar clique em codificar</label>
+                 <br><br>
+                <label for="">3.Para descriptografar clique em descodificar</label>
+                 <br><br>
+                <strong>Chave</strong><input type="text" id="i"><br>
+                <br>
+                <textarea name="" id="sentence" cols="30" rows="10" placeholder="Digite uma palavra"></textarea>
+                <textarea name="" id="encrypted" cols="30" rows="10"placeholder="Palavra Codificada"></textarea>
+                <textarea name="" id="descripted" cols="30" rows="10" placeholder="Palavra Descodificada"></textarea>
+                </fieldset>
+                <br><br>
+               <input type="submit"  value="codificar" id="submit" onclick=" encryptSentence()">
+               <input type="submit" value="decodificar" id="submit" onclick=" descriptSentence()">
+               <a href="#">Leia Mais</a>
+            </section>
+
+            <section class="postagem">
+                <h2>Codificador: Base  64</h2>
+                <span class="data-postagem">Postado em 03/10/2022</span>
+                <fieldset class="base64">
+                <label for="">1.Digite uma palavra ou frase</label>
+                <br><br>
+                <label for="">2.Para criptografar clique em emcode</label>
+                <br><br>
+                <label for="">3.Para descriptografar clique em decode</label>
+                <br><br>
+                <textarea name="" id="texto" cols="30" rows="10" placeholder="Digite uma frase"></textarea>
+                <textarea name="" id="emcode" cols="30" rows="10"placeholder="Palavra Codificada"></textarea>
+                <textarea name="" id="decode" cols="30" rows="10"placeholder="Palavra Descodificada"></textarea>
+                </fieldset>
+            
+                <br><br>
+                <input type="submit" value="encode" id="submit" onclick=" codbase()">
+                <input type="submit" value="decode" id="submit" onclick=" decodbase()">
+                <a href="#">Leia Mais</a>
+            </section>
+
+           
+
+        </article>
+
+        <aside id="area-lateral">
+
+            <section class="conteudo-lateral">
+                <h3>Postagens recentes</h3>
+                <section class="postagem-lateral">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ab necessitatibus asperiores facilis nam. Laboriosam atque est nobis culpa illo ipsam recusandae dolor adipisci dolore? Officiis rerum doloremque obcaecati non.</p>
+                    <a href="#">Leia Mais</a>
+                </section>
+                <section class="postagem-lateral">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ab necessitatibus asperiores facilis nam. Laboriosam atque est nobis culpa illo ipsam recusandae dolor adipisci dolore? Officiis rerum doloremque obcaecati non.</p>
+                    <a href="#">Leia Mais</a>
+                </section>
+            </section>
+
+            <section class="conteudo-lateral">
+                <h3>Categorias</h3>
+                <a href="#">Conteúdos</a>
+                <a href="#">Portifolio</a>
+                <a href="#">Contato</a>
+            </section>
+
+
+
+        </aside>
+
+        <div id="clear"></div>
+
+    </main>
+
+    <footer id="rodape">
+        <div id="icones">
+            <a href="https://github.com/AnaSgon" target="_blank" freeCodeCamp> <img width="50px" src="img/github.icon.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/ana-caroline-de-souza-gon%C3%A7alves-48745820b/" target="_blank"freeCodeCamp><img width="50px"  src="img/linkedin (1).png" alt=""></a>
+        </div>
+        Todos os direitos reservados &copy;
+      </footer>
+
+
+
+<script src="codificador.js"></script>
+
+</body>
+</html>
